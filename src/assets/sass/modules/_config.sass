@@ -1,0 +1,457 @@
+*
+	box-sizing: border-box
+html
+	font-size: 10px
+	overflow-x: hidden
+body
+	font-family: 'Museo Sans Cyrl', sans-serif
+	line-height: 1.2
+	font-weight: 400
+	overflow-x: hidden
+	color: #282828
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
+a, button, input, textarea, select
+	outline: none
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+p
+	margin: 0
+img
+	max-width: 100%
+	max-height: 100%
+.bs
+	font-family: "BerlingskeSerifTx", sans-serif
+	font-style: italic
+.fw2
+	font-weight: 200
+.fw3
+	font-weight: 300
+.fw5
+	font-weight: 500
+.fw6
+	font-weight: 600
+.fw7
+	font-weight: 700
+.fw9
+	font-weight: 900
+
+.mrsm
+	margin-right: 2vw
+.mrm
+	margin-right: 0.5vw
+.mrs
+	margin-right: 0.3vw
+.mr
+	margin-right: 1vw
+
+.tar
+	text-align: right
+.tdt
+	text-decoration: line-through
+.tdu
+	text-decoration: underline
+.gray
+	color: #8f8f8f
+	letter-spacing: 0.6px
+
+.ttu
+	text-transform: uppercase
+.black
+	color: #282828
+
+.title
+	font-size: 2.23vw
+	font-weight: 300
+	.tg
+		
+.tgg
+	display: inline-block
+	padding: 0.1vw 0.4vw
+	margin: 0.2vw 0
+	background-color: #6dd168
+	border-radius: 5px
+.title-lg
+	font-size: 2.4vw
+
+// 30
+.t-min
+	font-size: 1.9vw
+	.tg
+		color: #379ab1
+	&.tgr
+		color: #0096d9
+.t-ss
+	font-size: 1.5vw
+
+.t-min2
+	font-size: 1.7vw
+	.tg
+		color: #379ab1
+
+// 36 //2.1
+.t-cir
+	font-size: 2.35vw
+	.tg
+		color: #379ab1
+
+// 16-17px
+.text
+	font-size: 0.97vw
+	.tg
+		color: #4389e6
+b
+	font-weight: 900
+// 18-19
+.text-md
+	font-size: 1.07vw
+	.tg
+		color: #48cf6e
+		font-weight: 900
+.tga
+	color: #ffc55b
+	letter-spacing: 0.75px
+a.text-min
+	color: #181818
+	transition: all 0.4s
+	&:hover
+		color: #ff7200
+// 14-15
+.small-text
+	font-size: 0.92vw
+	.tg
+		font-weight: 900
+		color: #88b332
+.tsm8
+	font-size: 0.51vw
+.tsm10
+	font-size: 0.61vw
+.tsm12
+	font-size: 0.75vw
+.tsm13
+	font-size: 0.85vw
+
+// 24
+.text24
+	font-size: 1.4vw
+// 23
+.text23
+	font-size: 1.3vw
+// 21
+.text21
+	font-size: 1.2vw
+	.tg
+		color: #4186e1
+	&.tg
+		color: #4186e1
+.container
+	max-width: 90vw
+	margin: 0 auto
+	&-min
+		max-width: 81vw
+		margin: 0 auto
+	&-md
+		max-width: 85vw
+		margin: 0 auto
+	&-mm
+		max-width: 72vw
+		margin: 0 auto
+
+.mlg
+	margin-bottom: 4.5vw
+.msm
+	margin-bottom: 2.4vw
+.mb
+	margin-bottom: 1.5vw
+.mbm
+	margin-bottom: 0.7vw
+.mbs
+	margin-bottom: 0.41vw
+
+
+.stop
+	overflow: hidden
+
+.section
+	padding: 6vw 0
+	position: relative
+.btn
+	padding: 1.3vw 1vw
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: all 0.3s
+	z-index: 6
+	cursor: pointer
+	border: none
+	border-radius: 50px
+	box-shadow: 0 8px 13px rgba(#1e7fa2, 0.49), inset 0 -4px 1px rgba(#1e7fa2,1)
+	background-image: linear-gradient(to top, #379ab1 0%, #3cccce 98%, #3cccce 100%), linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%)
+	position: relative
+	// overflow: hidden
+	text-shadow: 1px 0 57px #000000
+	color: #fff
+	font-weight: 800
+	letter-spacing: 0.7px
+	width: 100%
+	b
+		display: block
+	&:not(:disabled) .btn-blick
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border-radius: 10px
+		overflow: hidden
+		border-radius: 50px
+		&:after
+			margin-left: -30px
+			content: " "
+			width: 30px
+			height: 300px
+			background: #fff
+			animation-delay: 0.05s
+			position: absolute
+			left: -40px
+			top: -150px
+		 	animation-timing-function: ease-in-out
+			transition: all 0.1s
+			animation-name: slideme
+			animation-duration: 3.5s
+			animation-iteration-count: infinite
+			transform: rotate(45deg)
+	&:hover
+		box-shadow: 0 8px 13px rgba(#1e7fa2, 0.49), inset 0 4px 1px rgba(#1e7fa2,1)
+	&.dark
+		color: #fff
+		background-image: linear-gradient(to top, #33cb6e 0%, #6bd363 100%), linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%)
+		box-shadow: 0 8px 13px rgba(#3ea95b, 0.49), inset 0 -4px 1px rgba(#3ea95b,1)
+		&:hover
+			box-shadow: 0 8px 13px rgba(#3ea95b, 0.49), inset 0 4px 1px rgba(#3ea95b,1)
+	&.bord
+		border-radius: 5px
+		border: 1px solid #dddddd
+		background: #ffffff
+		box-shadow: 0px 0px 2px #a7a7a7
+		color: #7f7f7f
+		&:hover
+			box-shadow: 0px 0px 20px #a7a7a7
+	&.tgr
+		color: #fff
+		background-image: linear-gradient(to top, #d80733 0%, #fb5f45 100%), linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%)
+		box-shadow: 0 8px 13px rgba(#a61c2e, 0.49), inset 0 -4px 1px rgba(#a61c2e,1)
+		&:hover
+			box-shadow: 0 8px 13px rgba(#a61c2e, 0.49), inset 0 4px 1px rgba(#a61c2e,1)
+	&.big
+		padding: 1.7vw 1vw
+	.cwh
+		color: #fff
+.btn-c
+	align-items: center
+.tac
+	text-align: center
+.burger
+	width: 3rem
+	height: 4rem
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	// display: none
+	margin-left: 1rem
+	span
+		display: block
+		width: 100%
+		height: 4px
+		border-radius: 4px
+		position: relative
+		background-color: #f39c50
+		&:before, &:after
+			content: ''
+			position: absolute
+			display: block
+			width: 100%
+			height: 4px
+			left: 0
+			background-color: #f39c50
+			border-radius: 4px
+		&:before
+			top: -1rem
+		&:after
+			bottom: -1rem
+	&__wrap
+		text-transform: uppercase
+		font-size: 1.4rem
+		color: #f39c50
+		display: flex
+		align-items: center
+		font-weight: 600
+		cursor: pointer
+		// display: none
+		&-block
+			width: 0
+			display: none
+.close-nav
+	display: none
+.phone-link
+	font-weight: 500
+	font-size: 1vw
+	color: #44242E
+	transition: all 0.4s
+	&:hover
+		color: #149456
+.link
+	color: #59ce71
+	font-weight: 400
+	transition: all 0.4s
+	position: relative
+	display: inline-block
+	&:before
+		content: ""
+		position: absolute
+		left: 50%
+		top: 100%
+		width: 100%
+		height: 1px
+		border-bottom: 1px solid #59ce71
+		transform: translateX(-50%)
+		transition: all 0.4s
+	&:hover
+		&:before
+			width: 40%
+input::-webkit-input-placeholder 
+  color: #727272
+input:-ms-input-placeholder 
+  color: #727272
+input::-ms-input-placeholder 
+  color: #727272
+input::placeholder 
+  color: #727272
+.input
+	height: 3.5vw
+	padding: 0.3vw 1vw
+	padding-left: 2vw
+	font-weight: 400
+	border-radius: 28px
+	border: 1px solid #e8e8e8
+	background-color: #ffffff
+	align-self: center
+	width: 100%
+	position: relative
+	&.t2
+		background-color: #f6f6f6
+		height: 4vw
+		padding-left: 3vw
+		border: none
+	&.t3
+		border-radius: 4px
+		height: 2.7vw
+	&.phone
+		background: url(../img/prc/ph.png) no-repeat center left 1.2vw, #f6f6f6
+		background-size: 1.1vw
+.inp-min
+	width: 30.5%
+.inp-md
+	width: 48%
+.inp-big
+	width: 100%
+	margin: 0.7vw 0
+.input
+	&.inp-pd
+		height: 3.5vw
+		padding: 0.7vw 1.5vw
+
+.arrows
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	width: 3rem
+	z-index: 18
+	transition: all 0.4s
+	cursor: pointer
+	border: none
+	background: transparent
+	&.t2
+		width: 2.5rem
+	&:hover
+		opacity: 0.7
+		transform: translateY(-50%) scale(1.1)
+.slidePrev
+	left: 3.5rem
+	&.t2
+		left: -3rem
+.slideNext
+	right: 3.5rem
+	&.t2
+		right: -3rem
+
+
+
+.check
+	&-box
+		cursor: pointer
+		display: block
+	&-line
+		display: flex
+		align-items: center
+		a
+			color: #5bd273
+	&-label
+		width: 1.3vw
+		height: 1.3vw
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0.2vw
+		position: relative
+		flex-shrink: 0
+		margin-right: .5vw
+		border-radius: 2px
+		background-color: #5bd273
+		&-act
+			transition: all 0.4s
+			transform: scale(0)
+		&.min
+			width: 1vw
+			height: 1vw
+			border-radius: 2px
+			border: 1px solid #dddddd
+			background-color: #fff
+
+	.tsm12
+		font-weight: 500
+.rhide
+	display: none
+	&:checked ~ span
+		.check-label
+			&-act
+				transform: scale(1)
+			&.min
+				background-color: #5bd273
+
+.labels
+	transform: skew(8deg)
+	&-wrap
+		padding: 0.6vw 0.8vw
+		border-radius: 5px
+		transform: skew(-8deg)
+		color: #fff
+		display: inline-block
+		background-color: #00c063
+		&.light
+			box-shadow: 7px 0 40px rgba(81, 81, 81, 0.2)
+			border: 1px dashed #dddddd
+			background-color: #ffffff
+			color: #747474
+
+.bg-line
+	background-image: linear-gradient(to bottom, transparent 0% , transparent 60%, #d3eeec 61% , #d3eeec 100%)

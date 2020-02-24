@@ -1,0 +1,265 @@
+.overlay
+	//display: none
+	z-index: 999
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.7)
+	overflow-y: scroll
+
+.dark-tsm
+	border: 1px solid #e8e8e8
+	color: #262626
+	padding: 0.4vw 0.7vw
+.modal
+	// padding: 2.5vw 2vw
+	// padding-top: 3.5vw
+	// overflow: hidden
+	border-radius: 5px
+	&-wrap
+		position: absolute
+		top: 5vh
+		left: 50%
+		transform: translateX(-50%)
+		box-shadow: 0 10px 39px 1px rgba(83, 83, 83, 0.1)
+		// width: 34vw
+		margin-bottom: 8vw
+		border-radius: 5px
+	&-min
+		width: 27vw
+
+	&-big
+		width: 51vw
+
+	&-sm
+		width: 36vw
+		.modal
+			overflow: unset
+.btn-video-end
+	width: auto
+	margin-left: auto
+	margin-right: auto
+.modal-vidos
+	width: 39vw
+	display: block
+	margin-left: auto
+	margin-right: auto
+	height: 22vw
+.text-soc
+	padding-left: 1vw
+.close
+	position: absolute
+	right: 0
+	top: 0
+	width: 1.5vw
+	height: 1.5vw
+	transform: translate(-100%, 100%)
+	cursor: pointer
+	z-index: 99
+	&-modals
+		top: 1vw
+.close:before, .close:after
+	position: absolute
+	left: 50%
+	content: ' '
+	height: 100%
+	width: 2px
+	background-color: #cad1d4
+	transition: all 0.4s
+	border-radius: 3px
+.close:before
+	transform: rotate(45deg)
+.close:after
+	transform: rotate(-45deg)
+.close:hover 
+	&:before, &:after
+		background-color: #fbc956
+
+.form-wrapper
+	width: 16vw
+	&__label
+		padding-left: 1.5vw
+	.fancy-select div.trigger
+		border: 1px solid #e8e8e8
+		background-color: #f8f8fa
+		color: #727272
+.modal-label
+	display: block
+	cursor: pointer
+
+
+
+
+.modal-thanks-wrap
+	text-align: center
+	padding: 1.2vw 0
+	.form-title
+		font-weight: 500
+.mc-img
+	position: absolute
+	right: -8vw
+	bottom: -3vw
+	width: 25vw
+	max-height: none
+.mc-img2
+	position: absolute
+	right: -5vw
+	bottom: 0
+	width: 17vw
+	max-height: none
+.mc-img3
+	position: absolute
+	right: 0
+	bottom: 2vw
+	width: 12vw
+	max-height: none
+.mc-times
+	position: absolute
+	right: 5vw
+	bottom: 13vw
+	width: 7vw
+	max-height: none
+
+
+.mst
+	display: flex
+	align-items: center
+	justify-content: center
+	&-img
+		width: 5.5vw
+		margin-right: 1vw
+		flex-shrink: 0
+.pmth
+	right: 6vw
+	bottom: 15vw
+	color: #000
+	top: auto
+	.play-main-text-img
+		width: 3.1vw
+		top: -5vw
+		left: 0.6vw
+
+.form-actions
+	width: 80%
+	margin-left: auto
+	margin-right: auto
+.hsbl-s
+	width: 100%
+	&-2
+		width: 80%
+		margin-left: auto
+		margin-right: auto
+	&-3
+		width: 70%
+
+.modal-price-img
+	position: absolute
+	right: -8.5vw
+	bottom: 3vw
+	width: 17vw
+
+.btn-yout
+	width: 18vw
+	margin-top: 19vw
+	margin-left: auto
+	margin-right: auto
+
+.mdwtc
+	height: 24vw
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	flex-direction: column
+.img-thanks
+	width: 3vw
+	animation: rotate2 3.8s infinite linear
+
+.mzmer
+	display: flex
+	justify-content: flex-end
+	&.pdf
+		padding-top: 3vw
+		padding-bottom: 4vw
+	&__right
+		width: 50%
+		&.pdf
+			width: 65%
+			.form-actions
+				width: 65%
+	&__left
+		position: absolute
+		bottom: -0.2vw
+		left: 3.1vw
+		width: 22vw
+		&.mw2
+			width: 28vw
+			left: 0
+		.free-trig
+			top: -2.7vw
+	&__pdf
+		position: absolute
+		left: -6.4vw
+		top: 0
+		height: 100%
+.wom2
+	// transform: scale()
+.mts-img
+	width: 16vw
+	display: block
+	margin-left: auto
+	margin-right: auto
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+
+.right-menu
+	position: fixed
+	right: 2vw
+	top: 40%
+	box-shadow: 0 1px 57px rgba(0, 0, 0, 0.1), inset 0 0 24px rgba(255, 255, 255, 0.15)
+	border-radius: 30px
+	// background-color: #ffffff
+	background-color: rgba(#fdd265, 0.45)
+	// background-image: linear-gradient(to top, #e8bc46 0%, #f5dc83 100%)
+	z-index: 333
+	&__item
+		width: 3vw
+		height: 3.3vw
+		padding: 0.6vw 0.4vw
+		display: flex
+		align-items: center
+		justify-content: center
+		border-bottom: 1px solid #ffffff
+		position: relative
+		z-index: 3
+		&:last-child
+			border: none
+		&-hover
+			position: absolute
+			padding: 0.6vw
+			padding-right: 4vw
+			padding-left: 2vw
+			white-space: nowrap
+			right: 0
+			top: 0
+			height: 100%
+			z-index: -1
+			box-shadow: 0 1px 57px rgba(0, 0, 0, 0.1), inset 0 0 24px rgba(255, 255, 255, 0.15)
+			border-radius: 3px
+			background-color: #ffffff
+			background-image: linear-gradient(to top, #ce9b24 0%, #f1cf5b 100%)
+			color: #fff
+			display: flex
+			align-items: center
+			overflow: hidden
+			transform: translateX(10%) scale(0)
+			opacity: 0
+			transition: all 0.4s ease
+			pointer-events: none
+		&:hover &-hover
+			transform: translateX(0) scale(1)
+			opacity: 1
